@@ -1,0 +1,74 @@
+{% load static %}
+<!doctype html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"  id="bootstrap-css">
+		<link rel="stylesheet" href="{% static 'css/navbar_footer.css' %}" crossorigin="anonymous"  id="navbar-footer">
+		
+        <!-- Custom fonts for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	
+		<title>C&eacute;lula Microsoft ESPOL</title>
+		<link rel="shortcut icon" href="{% static 'images/ico/logo.ico' %}">
+	</head>
+
+	<body>
+		<div class="sticky-top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-lightfixed-top">
+				<a class="navbar-brand" href="{% url 'home' %}">
+				  <img src="{% static 'images/svg/logo.svg' %}" width="130" height="40" alt="">
+				</a>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				  <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="/#home">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/#about_us">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="" tabindex="-1" aria-disabled="true">Next Event</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/#contact_us">Contac Us</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="">Follow Us</a> 
+					</li>
+                  </ul>
+				</div>
+				<a class="navbar-right">
+					<img src="{% static 'images/svg/logo.svg' %}" width="130" height="40" alt="" style="visibility: hidden;">
+				</a>
+            </nav>
+            
+			{% block content %}
+				<div class="list-inline text-center">
+					<h2>
+						body to replace
+					</h2>
+				</div>
+			{% endblock %}
+	
+			<footer class="footer mt-auto py-3">
+                    <div class="container">
+                        <ul class="list-unstyled list-inline text-center py-2">
+                            <img src="{% static 'images/png/espol.png' %}" width="225" height=45" alt="..">
+							<p>Campus Gustavo Galindo - Guayaquil, Ecuador<br>Oficinas de Cisco - A113</p>
+							<!-- Copyright -->
+							<div class="footer-copyright text-center py-3">
+								Célula Microsoft&nbsp;&copy;&nbsp;Development Team 2019
+							</div>
+							<!-- Copyright -->
+                        </ul>
+                    </div>
+			</footer>
+	</body>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</html>
